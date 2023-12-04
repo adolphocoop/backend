@@ -15,7 +15,13 @@ import clientesRoutes from './routes/clientes.routes.js'
 
 const app = express();
 app.use(cors({
-   origin: 'http://localhost:5173',
+   origin: [
+      'http://localhost:5173',
+      'https://terfrontend.onrender.com'
+   ],
+   
+   
+   
    credentials: true
 }));
 
